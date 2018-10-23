@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import com.ncgroup.util.Log;
 import com.ncgroup.util.SqlHelper;
 
 /**
@@ -32,7 +33,7 @@ public class Startup {
 				System.out.println(rs.getString(1));
 				System.out.println(rs.getString(2));
 			}
-			
+			Log.info("test");
 			System.out.println(System.currentTimeMillis() - start);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
