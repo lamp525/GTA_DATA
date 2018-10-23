@@ -67,6 +67,12 @@ public class DateHelper {
 	public static Integer getYearByCurrentTime() {
 		return Integer.valueOf(Calendar.getInstance().get(Calendar.YEAR));
 	}
+	
+	public static Integer getYearByCurrentTime(Date date) {
+		Calendar calendar = Calendar.getInstance();
+		calendar.setTime(date);
+		return Integer.valueOf(calendar.get(Calendar.YEAR));
+	}
 
 	/**
 	 * @description: 获取当前时间的月

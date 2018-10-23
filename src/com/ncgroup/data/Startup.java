@@ -3,7 +3,9 @@ package com.ncgroup.data;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Date;
 
+import com.ncgroup.util.DateHelper;
 import com.ncgroup.util.Log;
 import com.ncgroup.util.SqlHelper;
 
@@ -20,6 +22,9 @@ public class Startup {
 	 */
 	public static void main(String[] args) {
 		try {
+			
+
+			
 			String sql1 = " SELECT close, utime, from_unixtime(utime,'%Y%m%d %k%i%s') as tt FROM 2_1mkd.2018_10_18  where symbol = '000001' ";
 			String sql = " SELECT *  FROM CTMDB.DBO.USERINFO ";
 			

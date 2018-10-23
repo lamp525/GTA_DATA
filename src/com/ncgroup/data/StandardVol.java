@@ -5,12 +5,12 @@ package com.ncgroup.data;
  * @create: 2018年10月19日 下午5:23:56
  * @version: 1.0
  */
-public class StdVolMin01 {
+public class StandardVol {
 
 	/**@description: 
 	 * 
 	 */
-	public StdVolMin01() {
+	public StandardVol() {
 		// TODO Auto-generated constructor stub
 	}
 	
@@ -35,6 +35,11 @@ public class StdVolMin01 {
 	 */
 	private boolean calculateMin01()
 	{
+		boolean ret = false;
+		
+		
+		
+		
 		return true;
 	}
 
